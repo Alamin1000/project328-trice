@@ -510,6 +510,10 @@ p {
 }
 
 
+.btn.btn--min-width {
+	min-width: 130px;
+  }
+
 
 }
 

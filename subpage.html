@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- css-start -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/fontAwesome5Pro.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- css-start-end -->
+  </head>
+  <body class="">
+    <!-- overlay -->
+    <div class="overlay"></div>
+    <!-- overlay-end -->
+
+    <!-- offcanvas-menu -->
+    <div class="offcanvas-wrapper">
+      <div class="offcanvas-head d-flex align-items-center justify-content-end">
+        <button class="offcanvas-close">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.87135 1.87132L15.614 15.614M1.87135 15.614L15.614 1.87132"
+              stroke="#454545"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-menu">
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">Exchange</a></li>
+          <li><a href="">Token</a></li>
+          <li><a href="">Yield Farming</a></li>
+          <li><a href="">Processing</a></li>
+          <li><a href="">Widget</a></li>
+          <li><a href="">Roadmap</a></li>
+          <li><a href="">Crowdfunding</a></li>
+          <li><a href="">Trice Card</a></li>
+          <li><a href="">Team Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- offcanvas-menu-end -->
+
+    <!-- header-start -->
+    <header class="header">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <!-- header-left -->
+          <div class="header-left d-flex align-items-center">
+            <!-- header-logo -->
+            <div class="header-logo">
+              <a href="index.html">
+                <img class="logo-dark" src="assets/img/logo.svg" alt="" />
+                <img class="logo-light" src="assets/img/logo-dark.svg" alt="" />
+              </a>
+            </div>
+            <!-- header-logo-end -->
+
+            <!-- header-theme -->
+            <div class="header-theme">
+              <div class="switch">
+                <input type="checkbox" id="theme-mode" />
+                <label for="theme-mode">
+                  <span class="ind"></span>
+                </label>
+              </div>
+            </div>
+            <!-- header-theme-end -->
+          </div>
+          <!-- header-left-end -->
+
+          <!-- header-right -->
+          <div class="header-right d-flex align-items-center">
+            <a href="" class="btn btn-primary">Buy crypto</a>
+            <button type="button" class="bg-transparent menu-bar p-0 border-0">
+              <svg
+                width="24"
+                height="20"
+                viewBox="0 0 24 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.584229"
+                  y="0.674316"
+                  width="23.068"
+                  height="3.00887"
+                  rx="1.50444"
+                  fill="white"
+                />
+                <rect
+                  x="0.584259"
+                  y="8.69775"
+                  width="23.068"
+                  height="3.00887"
+                  rx="1.50444"
+                  fill="white"
+                />
+                <rect
+                  x="0.584259"
+                  y="16.7212"
+                  width="23.068"
+                  height="3.00887"
+                  rx="1.50444"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+          <!-- header-right-end -->
+        </div>
+      </div>
+    </header>
+    <!-- header-start-end -->
+
+    <!-- main -->
+    <main>
+      <!-- section-btc -->
+      <section class="btc">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 wow fadeInUp">
+              <div class="btc-header mb-3 mb-lg-0">
+                <div class="d-flex align-items-start gap-2 gap-lg-4">
+                  <div class="btc-icon">
+                    <img src="assets/img/btc-large.png" alt="" />
+                  </div>
+                  <div class="btc-content">
+                    <div class="d-flex align-items-center gap-4">
+                      <h2 class="fs-1 mb-0">Bitcoin <small>BTC</small></h2>
+                      <a
+                        href=""
+                        class="btn btn-small btn-primary btn-icon d-none d-lg-flex"
+                      >
+                        <span>
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.7169 10.6751C9.19238 12.1958 6.76219 12.4367 5.07162 11.2172C5.02634 11.1871 4.96596 11.1419 4.93577 11.1118C3.83388 10.0127 2.74709 8.89847 1.64521 7.81441C0.739545 6.91102 0.0753939 5.79684 -7.7791e-05 4.51704C-0.0453608 3.29747 0.407469 2.10801 1.26785 1.26485C2.86785 -0.331136 5.41879 -0.421475 7.10936 1.02394C7.21502 1.06911 7.30558 1.1444 7.39615 1.23474L11.1094 4.95368C11.1094 4.95368 11.1848 5.05908 11.215 5.08919C12.4226 6.79057 12.2112 9.18455 10.7169 10.6751ZM5.82634 2.80061C4.99615 1.9725 3.63766 1.95745 2.80747 2.80061C1.97728 3.64377 1.97728 4.99885 2.80747 5.82696C3.12445 6.14314 5.87162 8.97376 6.39992 9.51579C7.21502 10.0578 8.42256 9.90726 9.17728 9.15443C9.9169 8.41667 10.0528 7.27238 9.49426 6.42921L5.82634 2.80061Z"
+                              fill="black"
+                            />
+                          </svg>
+                        </span>
+                        TRICE VERIFIED
+                      </a>
+                    </div>
+                    <div
+                      class="d-flex align-items-center gap-3 d-none d-lg-flex"
+                    >
+                      <div class="btc-token">
+                        Token: 0x698...1933
+                        <button
+                          type="button"
+                          class="bg-transparent border-0 p-0"
+                        >
+                          <svg
+                            width="17"
+                            height="17"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_528_2125)">
+                              <path
+                                d="M11.3334 9.13734V12.1123C11.3334 14.5915 10.3417 15.5832 7.86258 15.5832H4.88758C2.40841 15.5832 1.41675 14.5915 1.41675 12.1123V9.13734C1.41675 6.65817 2.40841 5.6665 4.88758 5.6665H7.86258C10.3417 5.6665 11.3334 6.65817 11.3334 9.13734Z"
+                                stroke="#535353"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M15.5834 4.88734V7.86234C15.5834 10.3415 14.5917 11.3332 12.1126 11.3332H11.3334V9.13734C11.3334 6.65817 10.3417 5.6665 7.86258 5.6665H5.66675V4.88734C5.66675 2.40817 6.65841 1.4165 9.13758 1.4165H12.1126C14.5917 1.4165 15.5834 2.40817 15.5834 4.88734Z"
+                                stroke="#535353"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_528_2125">
+                                <rect width="17" height="17" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="btc-token">
+                        Pair: 0xa43...ec9f
+                        <button
+                          type="button"
+                          class="bg-transparent border-0 p-0"
+                        >
+                          <svg
+                            width="17"
+                            height="17"
+                            viewBox="0 0 17 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_528_2125)">
+                              <path
+                                d="M11.3334 9.13734V12.1123C11.3334 14.5915 10.3417 15.5832 7.86258 15.5832H4.88758C2.40841 15.5832 1.41675 14.5915 1.41675 12.1123V9.13734C1.41675 6.65817 2.40841 5.6665 4.88758 5.6665H7.86258C10.3417 5.6665 11.3334 6.65817 11.3334 9.13734Z"
+                                stroke="#535353"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M15.5834 4.88734V7.86234C15.5834 10.3415 14.5917 11.3332 12.1126 11.3332H11.3334V9.13734C11.3334 6.65817 10.3417 5.6665 7.86258 5.6665H5.66675V4.88734C5.66675 2.40817 6.65841 1.4165 9.13758 1.4165H12.1126C14.5917 1.4165 15.5834 2.40817 15.5834 4.88734Z"
+                                stroke="#535353"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_528_2125">
+                                <rect width="17" height="17" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div
+                class="btc-week d-flex flex-wrap align-items-start justify-content-between justify-content-lg-end"
+              >
+                <h2
+                  class="fs-1 mb-0 d-flex justify-content-end flex-row-reverse flex-lg-row align-items-center gap-lg-4 gap-2 mb-0"
+                >
+                  <span class="d-flex align-items-center gap-2 gap-lg-3">
+                    <img src="assets/img/icons/triangle-primary.svg" alt="" />
+                    1.37% this week</span
+                  >
+                  <strong class="d-lg-none">$0.21</strong>
+                  <strong class="d-none d-lg-block">$26,505</strong>
+                </h2>
+                <div
+                  class="btc-links align-items-center gap-3 justify-content-end d-none d-lg-flex w-100"
+                >
+                  <a href="">Socials</a>
+                  <a href="">Website</a>
+                </div>
+
+                <a
+                  href=""
+                  class="btn btn-small btn-primary btn-icon d-lg-none mt-1"
+                >
+                  <span>
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.7169 10.6751C9.19238 12.1958 6.76219 12.4367 5.07162 11.2172C5.02634 11.1871 4.96596 11.1419 4.93577 11.1118C3.83388 10.0127 2.74709 8.89847 1.64521 7.81441C0.739545 6.91102 0.0753939 5.79684 -7.7791e-05 4.51704C-0.0453608 3.29747 0.407469 2.10801 1.26785 1.26485C2.86785 -0.331136 5.41879 -0.421475 7.10936 1.02394C7.21502 1.06911 7.30558 1.1444 7.39615 1.23474L11.1094 4.95368C11.1094 4.95368 11.1848 5.05908 11.215 5.08919C12.4226 6.79057 12.2112 9.18455 10.7169 10.6751ZM5.82634 2.80061C4.99615 1.9725 3.63766 1.95745 2.80747 2.80061C1.97728 3.64377 1.97728 4.99885 2.80747 5.82696C3.12445 6.14314 5.87162 8.97376 6.39992 9.51579C7.21502 10.0578 8.42256 9.90726 9.17728 9.15443C9.9169 8.41667 10.0528 7.27238 9.49426 6.42921L5.82634 2.80061Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </span>
+                  TRICE VERIFIED
+                </a>
+
+                <div class="d-flex align-items-center gap-3 d-lg-none w-100">
+                  <div class="btc-token">
+                    Token: 0x698...1933
+                    <button type="button" class="bg-transparent border-0 p-0">
+                      <svg
+                        width="17"
+                        height="17"
+                        viewBox="0 0 17 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_528_2125)">
+                          <path
+                            d="M11.3334 9.13734V12.1123C11.3334 14.5915 10.3417 15.5832 7.86258 15.5832H4.88758C2.40841 15.5832 1.41675 14.5915 1.41675 12.1123V9.13734C1.41675 6.65817 2.40841 5.6665 4.88758 5.6665H7.86258C10.3417 5.6665 11.3334 6.65817 11.3334 9.13734Z"
+                            stroke="#535353"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M15.5834 4.88734V7.86234C15.5834 10.3415 14.5917 11.3332 12.1126 11.3332H11.3334V9.13734C11.3334 6.65817 10.3417 5.6665 7.86258 5.6665H5.66675V4.88734C5.66675 2.40817 6.65841 1.4165 9.13758 1.4165H12.1126C14.5917 1.4165 15.5834 2.40817 15.5834 4.88734Z"
+                            stroke="#535353"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_528_2125">
+                            <rect width="17" height="17" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="btc-token">
+                    Pair: 0xa43...ec9f
+                    <button type="button" class="bg-transparent border-0 p-0">
+                      <svg
+                        width="17"
+                        height="17"
+                        viewBox="0 0 17 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_528_2125)">
+                          <path
+                            d="M11.3334 9.13734V12.1123C11.3334 14.5915 10.3417 15.5832 7.86258 15.5832H4.88758C2.40841 15.5832 1.41675 14.5915 1.41675 12.1123V9.13734C1.41675 6.65817 2.40841 5.6665 4.88758 5.6665H7.86258C10.3417 5.6665 11.3334 6.65817 11.3334 9.13734Z"
+                            stroke="#535353"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M15.5834 4.88734V7.86234C15.5834 10.3415 14.5917 11.3332 12.1126 11.3332H11.3334V9.13734C11.3334 6.65817 10.3417 5.6665 7.86258 5.6665H5.66675V4.88734C5.66675 2.40817 6.65841 1.4165 9.13758 1.4165H12.1126C14.5917 1.4165 15.5834 2.40817 15.5834 4.88734Z"
+                            stroke="#535353"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_528_2125">
+                            <rect width="17" height="17" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="btc-wrapper d-flex flex-wrap flex-lg-nowrap justify-content-between align-items-lg-stretch align-items-start"
+          >
+            <div class="btc-infos box-card wow fadeInUp">
+              <h6>Details</h6>
+              <div class="btc-info-inner">
+                <!-- info-item -->
+                <div class="btc-info-item">
+                  <p>Total liquidity <span>$11.7M</span></p>
+                </div>
+                <!-- info-item-end -->
+                <!-- info-item -->
+                <div class="btc-info-item">
+                  <p>24h volume <span>$11.7M</span></p>
+                </div>
+                <!-- info-item-end -->
+                <!-- info-item -->
+                <div class="btc-info-item">
+                  <p>Pooled WETH <span>$11.7M</span></p>
+                </div>
+                <!-- info-item-end -->
+                <!-- info-item -->
+                <div class="btc-info-item">
+                  <p>Pooled BTC <span>$11.7M</span></p>
+                </div>
+                <!-- info-item-end -->
+                <!-- info-item -->
+                <div class="btc-info-item">
+                  <p>Market Cap <span>$11.7M</span></p>
+                </div>
+                <!-- info-item-end -->
+                <!-- info-item -->
+                <div class="btc-info-item">
+                  <p>Circ. Supply <span>$11.7M</span></p>
+                </div>
+                <!-- info-item-end -->
+                <!-- info-item -->
+                <div class="btc-info-item">
+                  <p>Total Market Cap<span>$11.7M</span></p>
+                </div>
+                <!-- info-item-end -->
+                <!-- info-item -->
+                <div class="btc-info-item">
+                  <p>Total Supply <span>$11.7M</span></p>
+                </div>
+                <!-- info-item-end -->
+                <!-- info-item -->
+                <div class="btc-info-item">
+                  <p>Holders <span>$11.7M</span></p>
+                </div>
+                <!-- info-item-end -->
+                <!-- info-item -->
+                <div class="btc-info-item">
+                  <p>Total tx<span>$11.7M</span></p>
+                </div>
+                <!-- info-item-end -->
+                <!-- info-item -->
+                <div class="btc-info-item">
+                  <p>Pool created <span>$11.7M</span></p>
+                </div>
+                <!-- info-item-end -->
+                <!-- info-item -->
+                <div class="btc-info-item">
+                  <p>% Pooled <span>$11.7M</span></p>
+                </div>
+                <!-- info-item-end -->
+              </div>
+            </div>
+
+            <div class="btc-status wow fadeInUp" data-wow-delay="0.1s">
+              <img class="img-fluid" src="assets/img/analize.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section-btc-end -->
+
+      <!-- section-trade-history -->
+      <section class="trade-history">
+        <div class="container">
+          <div
+            class="trade-table-wrapper table-responsive box-card wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            <h6>Trade History</h6>
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Type</th>
+                  <th>Price USD</th>
+                  <th>Total</th>
+                  <th>Price ETH</th>
+                  <th>Amount BTC</th>
+                  <th>Total ETH</th>
+                  <th>Maker</th>
+                  <th>Others</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p class="text-primary">May 11 00:57:59</p>
+                  </td>
+                  <td>
+                    <p class="text-primary">buy</p>
+                  </td>
+                  <td>
+                    <p class="text-primary">$0.0₅1919</p>
+                  </td>
+                  <td>
+                    <p class="text-primary">$913.23</p>
+                  </td>
+                  <td>
+                    <p class="text-primary">0.0₈104</p>
+                  </td>
+                  <td>
+                    <p class="text-primary">15,378,000,00</p>
+                  </td>
+                  <td>
+                    <p class="text-primary">15,378,000,00</p>
+                  </td>
+                  <td>
+                    <p class="text-primary">0x43...71c3</p>
+                  </td>
+                  <td>
+                    <p class="text-primary">TX</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="text-warning">May 11 00:57:59</p>
+                  </td>
+                  <td>
+                    <p class="text-warning">buy</p>
+                  </td>
+                  <td>
+                    <p class="text-warning">$0.0₅1919</p>
+                  </td>
+                  <td>
+                    <p class="text-warning">$913.23</p>
+                  </td>
+                  <td>
+                    <p class="text-warning">0.0₈104</p>
+                  </td>
+                  <td>
+                    <p class="text-warning">15,378,000,00</p>
+                  </td>
+                  <td>
+                    <p class="text-warning">15,378,000,00</p>
+                  </td>
+                  <td>
+                    <p class="text-warning">0x43...71c3</p>
+                  </td>
+                  <td>
+                    <p class="text-warning">TX</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- section-trade-history-end -->
+
+      <!-- rise-area -->
+      <section class="rise">
+        <div class="container">
+          <div class="rise-wrapper">
+            <div class="rise-content wow fadeInUp">
+              <h3>Bitcoin is on the rise this week</h3>
+              <p>
+                The price of BITCOIN has risen by 8.53% in the past 7 days. The
+                price increased by 1.22% in the last 24 hours. In just the past
+                hour, the price shrunk by 1.23%. The current price is $17,942.50
+                per TRICE. Bitcoin is 73.92% below the all time high of
+                $68,789.63.
+              </p>
+              <p>
+                The price of BITCOIN has risen by 8.53% in the past 7 days. The
+                price increased by 1.22% in the last 24 hours. In just the past
+                hour, the price shrunk by 1.23%. The current price is $17,942.50
+                per TRICE. Bitcoin is 73.92% below the all time high of
+                $68,789.63.
+              </p>
+
+              <div class="rise-btc">
+                <h3>How much is 1 BTC?</h3>
+
+                <div class="rise-items">
+                  <div class="rise-item">
+                    <p class="mb-0 small fw-bold">
+                      BTC/USD (US dollar) <br />
+                      <span class="text-white">$26700</span>
+                    </p>
+                  </div>
+
+                  <div class="rise-item">
+                    <p class="mb-0 small fw-bold">
+                      BTC/USD (US dollar) <br />
+                      <span class="text-white">$26700</span>
+                    </p>
+                  </div>
+
+                  <div class="rise-item">
+                    <p class="mb-0 small fw-bold">
+                      BTC/USD (US dollar) <br />
+                      <span class="text-white">$26700</span>
+                    </p>
+                  </div>
+
+                  <div class="rise-item">
+                    <p class="mb-0 small fw-bold">
+                      BTC/USD (US dollar) <br />
+                      <span class="text-white">$26700</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- rise-area-end -->
+    </main>
+    <!-- main-end -->
+
+    <!-- footer-start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-content">
+            <a href="index.html" class="d-block"
+              ><img src="assets/img/logo.svg" alt=""
+            /></a>
+            <p class="d-none d-lg-block">
+              Copyright © 2023 Trice Network | All Rights Reserved Terms and
+              Conditions | Privacy Policy
+            </p>
+          </div>
+
+          <div class="footer-right">
+            <div class="footer-widgets">
+              <div class="footer-widget">
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Exchange</a></li>
+                  <li><a href="">Token</a></li>
+                  <li><a href="">Yield Farming</a></li>
+                  <li><a href="">Processing</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-widget">
+                <ul>
+                  <li><a href="">Widget</a></li>
+                  <li><a href="">Roadmap</a></li>
+                  <li><a href="">Crowdfunding</a></li>
+                  <li><a href="">Trice Card</a></li>
+                  <li><a href="">Team</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-social">
+              <a href=""><img src="assets/img/social/discord.png" alt="" /></a>
+              <a href=""><img src="assets/img/social/Twitter.png" alt="" /></a>
+              <a href=""><img src="assets/img/social/teligram.png" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="w-100 d-lg-none">
+            <p class="w-100 mb-0 text-center">
+              Copyright © 2023 Trice Network | All Rights Reserved Terms and
+              Conditions | Privacy Policy
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer-start-end -->
+
+    <!-- scripts -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>

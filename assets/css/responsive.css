@@ -74,6 +74,18 @@ h6{
 	gap: 45px;
 }
 
+.rise-wrapper {
+	flex-wrap: wrap;
+	gap: 30px;
+}
+.rise-content {
+	width: 100%;
+	max-width: 100%;
+}
+.rise-wrapper .hero-exchange {
+	width: 100%;
+  }
+
 }
 
 /* X-Large devices (large desktops, 1200px and up) */

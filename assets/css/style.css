@@ -273,6 +273,12 @@ label {
     font-size: 16px;
     opacity: 1;
 }
+.light .dark-element {
+  display: none;
+}
+.dark .light-element {
+  display: none;
+}
 /* defaults-css--end */
 
 
@@ -505,6 +511,9 @@ label {
 }
 .exchange-item-header ul li a.active {
   color: var(--primary);
+}
+.light .exchange-item-header ul li a.active {
+  color: #000;
 }
 .exchange-calc-input label {
   display: block;
@@ -1623,6 +1632,9 @@ label {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+.rise-wrapper .hero-exchange {
+  width: 495px;
 }
 .rise {
   padding: 30px 0px 10px;

@@ -136,7 +136,7 @@ $(document).ready(function () {
 // slider slider activations
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-  loop: true,
+  loop: false,
   speed: 400,
   spaceBetween: 10,
   slidesPerView: "auto",

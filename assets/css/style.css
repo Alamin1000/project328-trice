@@ -855,12 +855,16 @@ label {
   gap: 15px;
   margin-bottom: 18px;
 }
+.roadmap-header .swiper-wrapper {
+  flex-wrap: nowrap;
+}
 .roadmap-item {
   flex: 0 0 auto;
   width: 134px;
   display: flex;
   align-items: flex-start;
   gap: 2px;
+  text-decoration: none;
 }
 .roadmap-item p {
   font-size: 14px;
@@ -870,6 +874,7 @@ label {
   margin-bottom: 0px;
   flex-grow: 1;
 }
+
 .roadmap-ind {
   flex: 0 0 auto;
   width: 23px;
@@ -877,6 +882,28 @@ label {
 .roadmap-ind svg {
   max-width: 100%;
 }
+.roadmap-item p {
+	color: var(--primary);
+  transition: 0.3s;
+}
+.roadmap-item.active p {
+	color: var(--primary);
+}
+.roadmap-item.active ~ .roadmap-item p {
+	color: #646464;
+}
+.roadmap-item .roadmap-ind svg line {
+  stroke: var(--primary);
+  transition: 0.3s;
+}
+.roadmap-item.active .roadmap-ind svg line{
+  stroke: var(--primary);
+}
+.roadmap-item.active ~ .roadmap-item .roadmap-ind svg line {
+  stroke: #646464;
+}
+
+
 .roadmap-progress {
   flex: 0 0 auto;
   width: 100%;
@@ -900,12 +927,7 @@ label {
 .roadmap-content p:last-child {
   margin-bottom: 0px;
 }
-.roadmap-item.active p {
-	color: var(--primary);
-}
-.roadmap-item.active .roadmap-ind svg line{
-  stroke: var(--primary);
-}
+
 
 /* ======== sections style end ============ */
 

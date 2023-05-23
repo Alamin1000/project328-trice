@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- css-start -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/fontAwesome5Pro.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- css-start-end -->
+  </head>
+  <body class="">
+    <!-- overlay -->
+    <div class="overlay"></div>
+    <!-- overlay-end -->
+
+    <!-- offcanvas-menu -->
+    <div class="offcanvas-wrapper">
+      <div class="offcanvas-head d-flex align-items-center justify-content-end">
+        <button class="offcanvas-close">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.87135 1.87132L15.614 15.614M1.87135 15.614L15.614 1.87132"
+              stroke="#454545"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-menu">
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">Exchange</a></li>
+          <li><a href="">Token</a></li>
+          <li><a href="">Yield Farming</a></li>
+          <li><a href="">Processing</a></li>
+          <li><a href="">Widget</a></li>
+          <li><a href="">Roadmap</a></li>
+          <li><a href="">Crowdfunding</a></li>
+          <li><a href="">Trice Card</a></li>
+          <li><a href="">Team Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- offcanvas-menu-end -->
+
+    <!-- header-start -->
+    <header class="header">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <!-- header-left -->
+          <div class="header-left d-flex align-items-center">
+            <!-- header-logo -->
+            <div class="header-logo">
+              <a href="index.html">
+                <img class="logo-dark" src="assets/img/logo.svg" alt="" />
+                <img class="logo-light" src="assets/img/logo-dark.svg" alt="" />
+              </a>
+            </div>
+            <!-- header-logo-end -->
+
+            <!-- header-theme -->
+            <div class="header-theme">
+              <div class="switch">
+                <input type="checkbox" id="theme-mode" />
+                <label for="theme-mode">
+                  <span class="ind"></span>
+                </label>
+              </div>
+            </div>
+            <!-- header-theme-end -->
+          </div>
+          <!-- header-left-end -->
+
+          <!-- header-right -->
+          <div class="header-right d-flex align-items-center">
+            <a href="" class="btn btn-primary">Buy crypto</a>
+            <button type="button" class="bg-transparent menu-bar p-0 border-0">
+              <svg
+                width="24"
+                height="20"
+                viewBox="0 0 24 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.584229"
+                  y="0.674316"
+                  width="23.068"
+                  height="3.00887"
+                  rx="1.50444"
+                  fill="white"
+                />
+                <rect
+                  x="0.584259"
+                  y="8.69775"
+                  width="23.068"
+                  height="3.00887"
+                  rx="1.50444"
+                  fill="white"
+                />
+                <rect
+                  x="0.584259"
+                  y="16.7212"
+                  width="23.068"
+                  height="3.00887"
+                  rx="1.50444"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+          <!-- header-right-end -->
+        </div>
+      </div>
+    </header>
+    <!-- header-start-end -->
+
+    <!-- main -->
+    <main>
+      <!-- px-section -->
+      <section class="px-section py-4">
+        <div class="container">
+          <div class="px-section__inner d-flex justify-content-center">
+            <!-- hero-exchange -->
+            <div class="hero-exchange wow fadeInUp" data-wow-delay="0.1s">
+              <form id="msform" class="exchange-box all-step-content">
+                <!-- exchange-item 1 -->
+                <fieldset class="step active">
+                  <div class="exchange-item step-item d-block">
+                    <!-- exchange-header -->
+                    <div class="exchange-item-header">
+                      <h4>Exchange</h4>
+                      <ul>
+                        <li><a class="active" href="">Buy</a></li>
+                        <li><a href="">Sell</a></li>
+                      </ul>
+                      <a href="" class="help-center">Help center</a>
+                    </div>
+                    <!-- exchange-header-end -->
+
+                    <!-- exchange-calc -->
+                    <div class="exchange-calc">
+                      <div class="exchange-calc-box">
+                        <!-- exchange-calc-input -->
+                        <div class="exchange-calc-input">
+                          <label for="">You pay</label>
+                          <input type="text" value="5000" />
+                        </div>
+                        <!-- exchange-calc-input-emd -->
+
+                        <!-- exchange-calc-select -->
+                        <div class="exchange-clac-select">
+                          <div class="exchange-selected">
+                            <img src="assets/img/cripto-icons/eur.svg" alt="" />
+                            <span class="text">EUR</span>
+                          </div>
+                          <div class="exchange-select-optLists">
+                            <div class="exchange-select-header mb-4">
+                              <h4 class="mb-0">Select asset</h4>
+                              <button
+                                type="button"
+                                class="bg-transparent border-0 p-0 select-close"
+                              >
+                                <img src="assets/img/icons/times.svg" alt="" />
+                              </button>
+                            </div>
+                            <div class="s-box">
+                              <input type="text" placeholder="Find asset" />
+                              <span class="icon"
+                                ><img src="assets/img/icons/search.svg" alt=""
+                              /></span>
+                            </div>
+
+                            <ul>
+                              <li>
+                                <span class="icon"
+                                  ><img
+                                    src="assets/img/cripto-icons/btc.svg"
+                                    alt=""
+                                /></span>
+                                <span class="text"
+                                  >BTC <small>Bitcoin</small></span
+                                >
+                              </li>
+                              <li>
+                                <span class="icon"
+                                  ><img
+                                    src="assets/img/cripto-icons/btc.svg"
+                                    alt=""
+                                /></span>
+                                <span class="text"
+                                  >BTC <small>Bitcoin</small></span
+                                >
+                              </li>
+                              <li>
+                                <span class="icon"
+                                  ><img
+                                    src="assets/img/cripto-icons/btc.svg"
+                                    alt=""
+                                /></span>
+                                <span class="text"
+                                  >BTC <small>Bitcoin</small></span
+                                >
+                              </li>
+                              <li>
+                                <span class="icon"
+                                  ><img
+                                    src="assets/img/cripto-icons/btc.svg"
+                                    alt=""
+                                /></span>
+                                <span class="text"
+                                  >BTC <small>Bitcoin</small></span
+                                >
+                              </li>
+                              <li>
+                                <span class="icon"
+                                  ><img
+                                    src="assets/img/cripto-icons/btc.svg"
+                                    alt=""
+                                /></span>
+                                <span class="text"
+                                  >BTC <small>Bitcoin</small></span
+                                >
+                              </li>
+                              <li>
+                                <span class="icon"
+                                  ><img
+                                    src="assets/img/cripto-icons/btc.svg"
+                                    alt=""
+                                /></span>
+                                <span class="text"
+                                  >BTC <small>Bitcoin</small></span
+                                >
+                              </li>
+                              <li>
+                                <span class="icon"
+                                  ><img
+                                    src="assets/img/cripto-icons/btc.svg"
+                                    alt=""
+                                /></span>
+                                <span class="text"
+                                  >BTC <small>Bitcoin</small></span
+                                >
+                              </li>
+                              <li>
+                                <span class="icon"
+                                  ><img
+                                    src="assets/img/cripto-icons/btc.svg"
+                                    alt=""
+                                /></span>
+                                <span class="text"
+                                  >BTC <small>Bitcoin</small></span
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- exchange-calc-select-end -->
+                      </div>
+                      <div class="exchange-calc-box">
+                        <!-- exchange-calc-input -->
+                        <div class="exchange-calc-input">
+                          <label for="">You get</label>
+                          <input type="text" value="0.2577" />
+                        </div>
+                        <!-- exchange-calc-input-emd -->
+
+                        <!-- exchange-calc-select -->
+                        <div class="exchange-clac-select">
+                          <div class="exchange-selected">
+                            <img src="assets/img/cripto-icons/btc.svg" alt="" />
+                            <span class="text">BTC</span>
+                          </div>
+                          <div class="exchange-select-optLists">
+                            <div class="exchange-select-header mb-4">
+                              <h4 class="mb-0">Select asset</h4>
+                              <button
+                                type="button"
+                                class="bg-transparent border-0 p-0 select-close"
+                              >
+                                <img src="assets/img/icons/times.svg" alt="" />
+                              </button>
+                            </div>
+                            <div class="s-box">
+                              <input type="text" placeholder="Find asset" />
+                              <span class="icon"
+                                ><img src="assets/img/icons/search.svg" alt=""
+                              /></span>
+                            </div>
+
+                            <ul>
+                              <li>
+                                <span class="icon"
+                                  ><img
+                                    src="assets/img/cripto-icons/btc.svg"
+                                    alt=""
+                                /></span>
+                                <span class="text"
+                                  >BTC <small>Bitcoin</small></span
+                                >
+                              </li>
+                              <li>
+                                <span class="icon"
+                                  ><img
+                                    src="assets/img/cripto-icons/btc.svg"
+                                    alt=""
+                                /></span>
+                                <span class="text"
+                                  >BTC <small>Bitcoin</small></span
+                                >
+                              </li>
+                              <li>
+                                <span class="icon"
+                                  ><img
+                                    src="assets/img/cripto-icons/btc.svg"
+                                    alt=""
+                                /></span>
+                                <span class="text"
+                                  >BTC <small>Bitcoin</small></span
+                                >
+                              </li>
+                              <li>
+                                <span class="icon"
+                                  ><img
+                                    src="assets/img/cripto-icons/btc.svg"
+                                    alt=""
+                                /></span>
+                                <span class="text"
+                                  >BTC <small>Bitcoin</small></span
+                                >
+                              </li>
+                              <li>
+                                <span class="icon"
+                                  ><img
+                                    src="assets/img/cripto-icons/btc.svg"
+                                    alt=""
+                                /></span>
+                                <span class="text"
+                                  >BTC <small>Bitcoin</small></span
+                                >
+                              </li>
+                              <li>
+                                <span class="icon"
+                                  ><img
+                                    src="assets/img/cripto-icons/btc.svg"
+                                    alt=""
+                                /></span>
+                                <span class="text"
+                                  >BTC <small>Bitcoin</small></span
+                                >
+                              </li>
+                              <li>
+                                <span class="icon"
+                                  ><img
+                                    src="assets/img/cripto-icons/btc.svg"
+                                    alt=""
+                                /></span>
+                                <span class="text"
+                                  >BTC <small>Bitcoin</small></span
+                                >
+                              </li>
+                              <li>
+                                <span class="icon"
+                                  ><img
+                                    src="assets/img/cripto-icons/btc.svg"
+                                    alt=""
+                                /></span>
+                                <span class="text"
+                                  >BTC <small>Bitcoin</small></span
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <!-- exchange-calc-select-end -->
+                      </div>
+                    </div>
+                    <!-- exchange-calc-end -->
+
+                    <!-- exchange-summery -->
+                    <div class="exchange-summery">
+                      <div class="summery-header">
+                        <h5>Summary</h5>
+                        <div class="summery-valid-timer">
+                          <span
+                            ><img src="assets/img/icons/valid-icon.svg" alt=""
+                          /></span>
+                          <span class="fw-bold">Valid for 6s</span>
+                        </div>
+                      </div>
+                      <ul>
+                        <li>
+                          <span
+                            ><strong class="text-white">0.002577 BTC</strong>
+                            &nbsp; €42,498.08</span
+                          >
+                          <span>€4980.45</span>
+                        </li>
+                        <li>
+                          <span
+                            ><strong class="text-white">Trice fee</strong>&nbsp;
+                            majority of fee is burned</span
+                          >
+                          <span>€34.56</span>
+                        </li>
+                        <li>
+                          <span
+                            ><strong class="text-white">Transfer fee</strong
+                            >&nbsp; depends from chain</span
+                          >
+                          <span>€0.13</span>
+                        </li>
+                      </ul>
+                      <div class="text-center">
+                        <button
+                          type="button"
+                          class="btn btn--min-width btn-primary step-next step-progress-next"
+                        >
+                          Get started
+                        </button>
+                      </div>
+                    </div>
+                    <!-- exchange-summery-end -->
+
+                    <div class="exchnage-footer">
+                      <p>
+                        Powered by
+                        <img src="assets/img/icons/ex-footer.png" alt="" /> a
+                        registered cryptoasset business
+                      </p>
+                    </div>
+                  </div>
+                </fieldset>
+                <!-- exchange-item-end--1 -->
+
+                <!-- exchange-item--2 -->
+                <fieldset class="step">
+                  <div class="exchange-item step-item">
+                    <div class="exchange-item-inner">
+                      <!-- step-from-body -->
+                      <div
+                        class="step-body d-flex align-items-center justify-content-center flex-grow-1"
+                      >
+                        <div class="step-email">
+                          <div class="step-email-header text-center">
+                            <img
+                              src="assets/img/icons/message-green.png"
+                              class="email-message-img"
+                              alt=""
+                            />
+                            <h5>What is your email address?</h5>
+                          </div>
+
+                          <div class="step-inputs">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Type your email address"
+                            />
+
+                            <div class="site-check mb-2">
+                              <input type="checkbox" id="check-1" />
+                              <label for="check-1">
+                                <span class="ind"></span>
+                                <span class="text"
+                                  >I have read and agree to Ramp's Terms of
+                                  Service and Privacy Policy</span
+                                >
+                              </label>
+                            </div>
+
+                            <div class="site-check">
+                              <input type="checkbox" id="check-2" />
+                              <label for="check-2">
+                                <span class="ind"></span>
+                                <span class="text"
+                                  >Sign me up to receive news, offers, and tips
+                                  from Trice and its partners
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- step-from-body-end -->
+
+                      <!-- step-bottom -->
+                      <div class="step-bottom">
+                        <button
+                          type="button"
+                          class="btn btn-step step-prev step-progress-prev"
+                        >
+                          <span><i class="fas fa-long-arrow-left"></i></span>
+                          Back
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-step step-next step-progress-next"
+                        >
+                          CONFIRM & PROCEED
+                          <span><i class="fas fa-long-arrow-right"></i></span>
+                        </button>
+                      </div>
+                      <!-- step-bottom-end -->
+                    </div>
+                  </div>
+                </fieldset>
+                <!-- exchange-item-end--2 -->
+
+                <!-- exchange-item--3 -->
+                <fieldset class="step">
+                  <div class="exchange-item step-item">
+                    <div class="exchange-item-inner">
+                      <!-- step-from-body -->
+                      <div
+                        class="step-body d-flex align-items-center justify-content-center flex-grow-1"
+                      >
+                        <div class="step-email">
+                          <div class="step-email-header text-center">
+                            <img
+                              src="assets/img/icons/message-green.png"
+                              class="email-message-img"
+                              alt=""
+                            />
+                            <h5 class="mb-1">Confirm your email address</h5>
+                            <p>
+                              We’ve sent a confirmation code to test@gmail.com
+                            </p>
+                          </div>
+
+                          <div class="step-otp step-inputs">
+                            <div
+                              method="get"
+                              class="digit-group d-flex align-items-center justify-content-between"
+                              data-group-name="digits"
+                              data-autosubmit="false"
+                              autocomplete="off"
+                            >
+                              <input
+                                type="text"
+                                id="digit-1"
+                                class="form-control"
+                                name="digit-1"
+                                data-next="digit-2"
+                              />
+                              <input
+                                type="text"
+                                id="digit-2"
+                                class="form-control"
+                                name="digit-2"
+                                data-next="digit-3"
+                                data-previous="digit-1"
+                              />
+                              <input
+                                type="text"
+                                id="digit-3"
+                                class="form-control"
+                                name="digit-3"
+                                data-next="digit-4"
+                                data-previous="digit-2"
+                              />
+                              <input
+                                type="text"
+                                id="digit-4"
+                                class="form-control"
+                                name="digit-4"
+                                data-next="digit-5"
+                                data-previous="digit-3"
+                              />
+                              <input
+                                type="text"
+                                id="digit-5"
+                                class="form-control"
+                                name="digit-5"
+                                data-next="digit-6"
+                                data-previous="digit-4"
+                              />
+                              <input
+                                type="text"
+                                id="digit-6"
+                                class="form-control"
+                                name="digit-6"
+                                data-next="digit-7"
+                                data-previous="digit-5"
+                              />
+                            </div>
+                            <p class="small">
+                              Didn't receive your confirmation code?
+                              <a href="" class="text-primary"
+                                >Click here to resend.</a
+                              >
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- step-from-body-end -->
+
+                      <!-- step-bottom -->
+                      <div class="step-bottom">
+                        <button
+                          type="button"
+                          class="btn btn-step step-prev step-progress-prev"
+                        >
+                          <span><i class="fas fa-long-arrow-left"></i></span>
+                          Back
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-step step-next step-progress-next"
+                        >
+                          CONFIRM & PROCEED
+                          <span><i class="fas fa-long-arrow-right"></i></span>
+                        </button>
+                      </div>
+                      <!-- step-bottom-end -->
+                    </div>
+                  </div>
+                </fieldset>
+                <!-- exchange-item-end--3 -->
+
+                <!-- exchange-item--4 -->
+                <fieldset class="step">
+                  <div class="exchange-item step-item">
+                    <div class="exchange-item-inner">
+                      <!-- step-from-body -->
+                      <div
+                        class="step-body d-flex align-items-start flex-column justify-content-start flex-grow-1"
+                      >
+                        <div
+                          class="step-header d-flex align-items-center gap-3 mb-4 w-100"
+                        >
+                          <p class="mb-0 small">Step 1 of 3</p>
+                          <div class="step-progress">
+                            <div class="step-progress-bar"></div>
+                          </div>
+                        </div>
+
+                        <div class="step-email w-100">
+                          <h6 class="mb-3 fw-normal">
+                            Enter your Bitcoin wallet address
+                          </h6>
+                          <div class="step-inputs">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Add your Bitcoin wallet address or doman here"
+                              name=""
+                              id=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- step-from-body-end -->
+
+                      <!-- step-bottom -->
+                      <div class="step-bottom">
+                        <button
+                          type="button"
+                          class="btn btn-step step-prev step-progress-prev"
+                        >
+                          <span><i class="fas fa-long-arrow-left"></i></span>
+                          Back
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-step step-next step-progress-next"
+                        >
+                          CONFIRM & PROCEED
+                          <span><i class="fas fa-long-arrow-right"></i></span>
+                        </button>
+                      </div>
+                      <!-- step-bottom-end -->
+                    </div>
+                  </div>
+                </fieldset>
+                <!-- exchange-item-end--4 -->
+
+                <!-- exchange-item--5 -->
+                <fieldset class="step">
+                  <div class="exchange-item step-item">
+                    <div class="exchange-item-inner">
+                      <!-- step-from-body -->
+                      <div
+                        class="step-body d-flex align-items-start flex-column justify-content-start flex-grow-1"
+                      >
+                        <div
+                          class="step-header d-flex align-items-center gap-3 mb-4 w-100"
+                        >
+                          <p class="mb-0 small">Step 2 of 3</p>
+                          <div class="step-progress">
+                            <div class="step-progress-bar w-75"></div>
+                          </div>
+                        </div>
+
+                        <div class="step-email w-100">
+                          <h6 class="mb-3 fw-normal">
+                            Enter your Bitcoin wallet address
+                          </h6>
+                          <div class="payment-methods">
+                            <!-- single-payment -->
+                            <div class="payment-single">
+                              <input
+                                type="radio"
+                                id="payment-1"
+                                name="payment"
+                              />
+                              <label for="payment-1">
+                                <span class="payment-icon">
+                                  <img
+                                    src="assets/img/icons/bank-1.png"
+                                    alt=""
+                                  />
+                                </span>
+                                <div class="payment-info">
+                                  <h6 class="mb-1 fw-normal">
+                                    Easy bank transfer with Revolut
+                                  </h6>
+                                  <p class="small mb-0">Instant</p>
+                                </div>
+                              </label>
+                            </div>
+                            <!-- single-payment-end -->
+                            <!-- single-payment -->
+                            <div class="payment-single">
+                              <input
+                                type="radio"
+                                id="payment-2"
+                                name="payment"
+                              />
+                              <label for="payment-2">
+                                <span class="payment-icon">
+                                  <img
+                                    src="assets/img/icons/bank-2.png"
+                                    alt=""
+                                  />
+                                </span>
+                                <div class="payment-info">
+                                  <h6 class="mb-1 fw-normal">
+                                    Manual bank transfer
+                                  </h6>
+                                  <p class="small mb-0">
+                                    Up to two business days
+                                  </p>
+                                </div>
+                              </label>
+                            </div>
+                            <!-- single-payment-end -->
+                            <!-- single-payment -->
+                            <div class="payment-single">
+                              <input
+                                type="radio"
+                                id="payment-3"
+                                name="payment"
+                              />
+                              <label for="payment-3">
+                                <span class="payment-icon">
+                                  <img
+                                    src="assets/img/icons/credit.png"
+                                    alt=""
+                                  />
+                                </span>
+                                <div class="payment-info">
+                                  <h6 class="mb-1 fw-normal">Card</h6>
+                                  <p class="small mb-0">Takes minutes</p>
+                                </div>
+                              </label>
+                            </div>
+                            <!-- single-payment-end -->
+                            <!-- single-payment -->
+                            <div class="payment-single">
+                              <input
+                                type="radio"
+                                id="payment-4"
+                                name="payment"
+                              />
+                              <label for="payment-4">
+                                <span class="payment-icon">
+                                  <img
+                                    src="assets/img/icons/google-pay.png"
+                                    alt=""
+                                  />
+                                </span>
+                                <div class="payment-info">
+                                  <h6 class="mb-1 fw-normal">Google Pay</h6>
+                                  <p class="small mb-0">Takes minutes</p>
+                                </div>
+                              </label>
+                            </div>
+                            <!-- single-payment-end -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- step-from-body-end -->
+
+                      <!-- step-bottom -->
+                      <div class="step-bottom">
+                        <button
+                          type="button"
+                          class="btn btn-step step-progress-prev"
+                        >
+                          <span><i class="fas fa-long-arrow-left"></i></span>
+                          Back
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-step step-progress-next"
+                        >
+                          CONFIRM & PROCEED
+                          <span><i class="fas fa-long-arrow-right"></i></span>
+                        </button>
+                      </div>
+                      <!-- step-bottom-end -->
+                    </div>
+                  </div>
+                </fieldset>
+                <!-- exchange-item-end--5 -->
+
+                <!-- exchange-item--6 -->
+                <fieldset class="step">
+                  <div class="exchange-item step-item">
+                    <div class="exchange-item-inner">
+                      <!-- step-from-body -->
+                      <div
+                        class="step-body d-flex align-items-start flex-column justify-content-start flex-grow-1"
+                      >
+                        <div
+                          class="step-header d-flex align-items-center gap-3 mb-4 w-100"
+                        >
+                          <p class="mb-0 small">Step 3 of 3</p>
+                          <div class="step-progress">
+                            <div class="step-progress-bar w-100"></div>
+                          </div>
+                        </div>
+
+                        <div class="step-email w-100">
+                          <div class="mb-4">
+                            <h6 class="mb-2 fw-normal">
+                              Enter your Bitcoin wallet address
+                            </h6>
+                            <div class="step-inputs position-relative">
+                              <input
+                                type="text"
+                                class="form-control pe-5"
+                                placeholder="bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh"
+                                name=""
+                                id=""
+                              />
+                              <button
+                                class="position-absolute end-0 translate-middle top-50 lh-1 bg-transparent border-0"
+                              >
+                                <img src="assets/img/icons/edit.png" alt="" />
+                              </button>
+                            </div>
+                          </div>
+
+                          <div class="mb-4">
+                            <h6 class="mb-2 fw-normal">
+                              Chosen payment method is
+                              <span class="text-primary"
+                                >Manual bank transfer</span
+                              >
+                            </h6>
+                            <div class="step-inputs position-relative">
+                              <input
+                                type="text"
+                                class="form-control pe-5"
+                                placeholder="Any EUR account"
+                                name=""
+                                id=""
+                              />
+                              <button
+                                class="position-absolute end-0 translate-middle top-50 lh-1 bg-transparent border-0"
+                              >
+                                <img src="assets/img/icons/edit.png" alt="" />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- step-from-body-end -->
+
+                      <!-- step-bottom -->
+                      <div class="step-bottom">
+                        <button
+                          type="button"
+                          class="btn btn-step step-progress-prev"
+                        >
+                          <span><i class="fas fa-long-arrow-left"></i></span>
+                          Back
+                        </button>
+                        <button type="button" class="btn btn-step">
+                          CONFIRM & PROCEED
+                          <span><i class="fas fa-long-arrow-right"></i></span>
+                        </button>
+                      </div>
+                      <!-- step-bottom-end -->
+                    </div>
+                  </div>
+                </fieldset>
+                <!-- exchange-item-end--6 -->
+              </form>
+            </div>
+            <!-- hero-exchange-end -->
+          </div>
+        </div>
+      </section>
+      <!-- px-section-end -->
+    </main>
+    <!-- main-end -->
+
+    <!-- footer-start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-content">
+            <a href="index.html" class="d-block"
+              ><img src="assets/img/logo.svg" alt=""
+            /></a>
+            <p class="d-none d-lg-block">
+              Copyright © 2023 Trice Network | All Rights Reserved Terms and
+              Conditions | Privacy Policy
+            </p>
+          </div>
+
+          <div class="footer-right">
+            <div class="footer-widgets">
+              <div class="footer-widget">
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Exchange</a></li>
+                  <li><a href="">Token</a></li>
+                  <li><a href="">Yield Farming</a></li>
+                  <li><a href="">Processing</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-widget">
+                <ul>
+                  <li><a href="">Widget</a></li>
+                  <li><a href="">Roadmap</a></li>
+                  <li><a href="">Crowdfunding</a></li>
+                  <li><a href="">Trice Card</a></li>
+                  <li><a href="">Team</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer-social">
+              <a href=""><img src="assets/img/social/discord.png" alt="" /></a>
+              <a href=""><img src="assets/img/social/Twitter.png" alt="" /></a>
+              <a href=""><img src="assets/img/social/teligram.png" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="w-100 d-lg-none">
+            <p class="w-100 mb-0 text-center">
+              Copyright © 2023 Trice Network | All Rights Reserved Terms and
+              Conditions | Privacy Policy
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer-start-end -->
+
+    <!-- scripts -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>

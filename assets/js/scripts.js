@@ -133,20 +133,20 @@ $(document).ready(function () {
   });
 });
 
-// slider slider activations
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  loop: false,
-  speed: 400,
-  spaceBetween: 10,
-  slidesPerView: "auto",
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".roadmap-progress",
-    draggable: true,
-    dragClass: "roadmap-progress-bar",
-  },
-});
+// // slider slider activations
+// const swiper = new Swiper(".swiper", {
+//   // Optional parameters
+//   loop: false,
+//   speed: 400,
+//   spaceBetween: 10,
+//   slidesPerView: "auto",
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: ".roadmap-progress",
+//     draggable: true,
+//     dragClass: "roadmap-progress-bar",
+//   },
+// });
 
 // dark and light mood
 const modeBtn = document.getElementById("theme-mode");
@@ -182,3 +182,36 @@ $(".menu-bar").on("click", function () {
 $(".offcanvas-close, .overlay").on("click", function () {
   $(".offcanvas-wrapper, .overlay").removeClass("active");
 });
+
+// $(".roadmap-progress-nav .roadmap-item").click(function () {
+//   alert("hi");
+// });
+
+// var child_index = ""; //to store .child class parent index when clicked
+
+// $(".roadmap-item").click(function () {
+//   var parent = $(this).parent(); //getting the specific parent of c1
+
+//   //parent variable value now is = .child
+//   child_index = $(parent).index();
+
+//   alert(child_index);
+// });
+
+var rdC = document.querySelector(".roadmap-progress-nav");
+var rdI = document.querySelectorAll(".roadmap-progress-nav .roadmap-item");
+rdI.forEach((item) => {
+  item.addEventListener("click", function (e) {
+    var index = Array.prototype.indexOf.call(rdC.children, this);
+    console.log(index);
+    var trgt = document.getElementById("rd-progress");
+    trgt.style.cssText = `--width-data: ${index}`;
+  });
+});
+
+// for (x in rdI) {
+//   rdC.addEventListener("click", function () {
+//     alert("hi");
+//   });
+//   // console.log(rdI[x]);
+// }
